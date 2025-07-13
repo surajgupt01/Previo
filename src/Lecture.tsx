@@ -19,7 +19,7 @@ export default function Lecture() {
   };
 
   return (
-    <div className="bg-neutral-950 w-full h-auto  flex flex-col justify-center items-center relative">
+    <div className="bg-black w-full h-auto  flex flex-col justify-center items-center relative">
       
       <div className="text-purple-400 font-semibold absolute top-5 left-5 text-2xl flex justify-center items-center">
         <Play />
@@ -46,7 +46,7 @@ export default function Lecture() {
 
           <div className="absolute flex justify-center items-center group-hover:opacity-100 opacity-0 duration-300 ease-in-out">
             <div
-              className="w-10 rounded-full bg-gray-200 shadow-lg shadow-gray-600 h-10 flex justify-center items-center mr-6"
+              className="w-10 rounded-full hover:scale-110 duration-300 bg-gray-200 shadow-lg shadow-gray-600 h-10 flex justify-center items-center mr-6"
               onClick={() => {
                 skipTime(-10);
               }}
@@ -54,7 +54,7 @@ export default function Lecture() {
               <Less />
             </div>
             <div
-              className="bg-gray-200 shadow-lg shadow-gray-600 rounded-full w-20 h-20 flex justify-center items-center  duration-500 ease-in-out z-100 g cursor-pointer "
+              className="bg-gray-200 shadow-lg hover:scale-110  shadow-gray-600 rounded-full w-20 h-20 flex justify-center items-center  duration-500 ease-in-out z-100 g cursor-pointer "
               onClick={() => {
                 setPlay(!play);
                 if (play) video.current?.play();
@@ -65,7 +65,7 @@ export default function Lecture() {
             </div>
 
             <div
-              className="w-10 rounded-full bg-gray-200 shadow-lg shadow-gray-600 h-10 flex justify-center items-center ml-6 "
+              className="w-10 rounded-full bg-gray-200 shadow-lg hover:scale-110 duration-300 shadow-gray-600 h-10 flex justify-center items-center ml-6 "
               onClick={() => skipTime(10)}
             >
               <More />
@@ -93,10 +93,10 @@ export default function Lecture() {
           <span className="font-semibold ml-2">Pevio</span>{" "}
         </div>
         <br></br>
-        <p>
+        <div>
           <span>Chapter Title: Magnetism and Magnetic Effects of Current</span>
-
-          <span className="text-gray-400 text-sm mt-4 text-justify">
+            <br></br>
+          <div className="text-gray-400 text-sm mt-4 text-justify ml-4 w-[95%]">
             Welcome to this exciting chapter on Magnetism, where we explore one
             of nature’s most fascinating forces! In this lesson, we’ll take you
             on a journey from the mysterious behavior of magnets to the powerful
@@ -111,8 +111,8 @@ export default function Lecture() {
             everyday life With clear animations, step-by-step explanations, and
             practical examples, this video is designed to help you grasp
             concepts faster and retain them longer.
-          </span>
-        </p>
+          </div>
+        </div>
       </div>
     </div>
   );

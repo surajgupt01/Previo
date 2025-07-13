@@ -17,7 +17,7 @@ export const Aurora = ({
   return (
     <div
       className={cn(
-        "h-[20rem] md:h-screen w-full bg-white dark:bg-black",
+        "h-screen sm:h-[20rem] md:h-screen w-full bg-white dark:bg-black",
         className
       )}
     >
