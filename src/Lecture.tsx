@@ -21,20 +21,20 @@ export default function Lecture() {
   return (
     <div className="bg-black w-full h-auto  flex flex-col justify-center items-center relative">
       
-      <div className="text-purple-400 font-semibold absolute top-5 left-5 text-2xl flex justify-center items-center">
+      <div className="text-purple-400 font-semibold absolute top-5 left-5 text-2xl flex justify-center items-center ">
         <Play />
         Pevio
       </div>
 
-      <button className="flex justify-center items-center absolute top-15 left-40 cursor-pointer text-gray-500 hover:text-gray-600" onClick={()=>
+      <button className="flex justify-center items-center absolute sm:top-15 top-25 sm:left-40 left-10 cursor-pointer text-gray-500 hover:text-gray-600 p-2" onClick={()=>
         Navigate('/')
       }>
         <Back />
         back
       </button>
 
-      <div className="border-1 flex  mt-25">
-        <div className="border-1 border-gray-800 w-200 h-120 rounded-lg mr-8 relative  flex justify-center items-center  group ">
+      <div className="border-1 flex sm:flex-row  flex-col  sm:mt-25 mt-35 p-2">
+        <div className="border-1 border-gray-800 sm:w-200 w-full sm:h-120 h-60 rounded-lg mr-8 relative  flex justify-center items-center  group ">
           <video
             ref={video}
            
@@ -44,7 +44,7 @@ export default function Lecture() {
             <source  type="video/mp4" />
           </video>
 
-          <div className="absolute flex justify-center items-center group-hover:opacity-100 opacity-0 duration-300 ease-in-out">
+          <div className="absolute flex justify-center items-center group-hover:opacity-100 opacity-0 duration-300 ease-in-out sm:scale-100 scale-80">
             <div
               className="w-10 rounded-full hover:scale-110 duration-300 bg-gray-200 shadow-lg shadow-gray-600 h-10 flex justify-center items-center mr-6"
               onClick={() => {
@@ -73,7 +73,9 @@ export default function Lecture() {
           </div>
         </div>
 
-        <div className=" border-1 border-gray-900 shadow-lg shadow-gray-900 w-90 h-[450px] rounded-lg  p-4 overflow-auto flex flex-col items-center  ">
+        <hr className="text-gray-600 mt-8"></hr>
+
+        <div className=" border-1 border-gray-900 shadow-lg shadow-gray-900 w-90 sm:mt-0 mt-8 sm:h-[450px] h-[220px] rounded-lg  p-4 overflow-auto flex flex-col items-center  ">
           <span className="font-semibold text-purple-600 mb-4">Chapters</span>
 
           <div className="w-full h-[95%] scroll-smooth rounded-lg  overflow-auto p-4">
@@ -87,7 +89,7 @@ export default function Lecture() {
         </div>
       </div>
 
-      <div className="w-280 h-70 overflow-auto mb-20  bg-neutral-900  mt-8 rounded-lg font-semibold text-white font p-4 text-left">
+      <div className="sm:w-280 w-[90%] sm:h-70 h-auto overflow-auto mb-20  bg-neutral-900  mt-8 rounded-lg font-semibold text-white font p-4 text-left">
         <div className="flex justify-center items-center w-20">
           <div className="w-5 h-5 rounded-full bg-purple-300"></div>
           <span className="font-semibold ml-2">Pevio</span>{" "}
