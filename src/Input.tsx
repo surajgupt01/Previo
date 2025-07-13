@@ -3,11 +3,11 @@ import Mic from "./Mic";
 import SendIcon from "./SendIcon";
 import Play from "./play";
 import { useNavigate } from "react-router-dom";
-import { useClerk  ,  UserButton} from "@clerk/clerk-react";
+
 
 export default function Input() {
 
-    const {signOut} = useClerk()
+ 
 
     
 
@@ -64,7 +64,7 @@ export default function Input() {
         </div>
       </div>
 
-      <button className=" text-red-400 p-2 text-xs hover:border-red-700 hover:text-red-700 rounded-full border-1 border-red-400 cursor-pointer absolute top-10 right-10 " onClick={()=>{signOut(()=>{window.location.href='/signIn'})}}>
+      <button className=" text-red-400 p-2 text-xs hover:border-red-700 hover:text-red-700 rounded-full border-1 border-red-400 cursor-pointer absolute top-10 right-10 ">
         Logout
       </button>
     </div>
