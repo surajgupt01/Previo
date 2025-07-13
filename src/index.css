@@ -1,0 +1,24 @@
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+    width: 8px;
+   height: 8px;
+}
+
+::-webkit-scrollbar{
+  background-color: black;
+    width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(42, 42, 42);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 10px;
+  
+}
