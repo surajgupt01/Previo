@@ -3,7 +3,7 @@ import Input from "./Input";
 
 import {BrowserRouter , Routes , Route  } from 'react-router-dom'
 import Signin from "./SignIn";
-import { Aurora } from "./aurora";
+import { Aurora } from "./A1";
 
 function App() {
   return (
