@@ -20,6 +20,7 @@ export default function Lecture() {
 
   return (
     <div className="bg-neutral-950 w-full h-auto  flex flex-col justify-center items-center relative">
+      
       <div className="text-purple-400 font-semibold absolute top-5 left-5 text-2xl flex justify-center items-center">
         <Play />
         Pevio

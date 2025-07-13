@@ -3,7 +3,7 @@ import Mic from "./Mic";
 import SendIcon from "./SendIcon";
 import Play from "./play";
 import { useNavigate } from "react-router-dom";
-import { useClerk  ,  UserButton} from "@clerk/clerk-react";
+import { useClerk } from "@clerk/clerk-react";
 
 export default function Input() {
 
@@ -13,7 +13,7 @@ export default function Input() {
 
    const Navigate = useNavigate()
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center bg-neutral-950 p-4">
+    <div className="w-full h-screen flex flex-col justify-center items-center absolute p-4">
       <div className="text-purple-400 font-semibold absolute top-5 left-5 text-2xl flex justify-center items-center ">
         <Play />
         Pevio
@@ -45,7 +45,7 @@ export default function Input() {
             </div>
           </div>
 
-          <div className="rounded-full hover:bg-neutral-700  relative w-10 h-10 flex justify-center items-center duration-300 ease-in-out group">
+          <div className="rounded-full hover:bg-neutral-700  relative w-12 h-10 flex justify-center items-center duration-300 ease-in-out group">
             <Mic />
 
             <div className="bg-white text-neutral-900 text-xs absolute w-10 shadow-md shadow-gray-700 rounded-md p-1 duration-300 ease-in-out top-4 group-hover:-top-4 group-hover:opacity-100 opacity-0 ml-2">
