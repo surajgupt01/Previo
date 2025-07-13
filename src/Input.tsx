@@ -11,7 +11,7 @@ export default function Input() {
 
    const Navigate = useNavigate()
   return (
-    <div className="w-full h-screen flex flex-col justify-center items-center absolute p-4">
+    <div className="w-screen  h-screen flex flex-col justify-center items-center absolute p-4">
       <div className="text-purple-400 font-semibold absolute top-5 left-5 sm:text-2xl flex justify-center items-center ">
         <Play />
         Previo
@@ -24,7 +24,7 @@ export default function Input() {
         <br></br>
        <span className="text-lg text-gray-500">Turn your PDFs into engaging educational videos using AI — instantly.</span>
         </p>
-      <div className="sm:w-190 w-100 min-h-45 h-auto rounded-xl bg-neutral-900 p-2 shadow-lg shadow-gray-900 mt-10">
+      <div className="sm:w-190 w-90 min-h-45 h-auto rounded-xl bg-neutral-900 p-2 shadow-lg shadow-gray-900 mt-10">
         <textarea
           className="w-full min-h-30 h-auto  border-1 border-neutral-700 p-2 rounded-lg text-gray-300 resize-none"
           placeholder="Enter your requirements..."
@@ -51,7 +51,7 @@ export default function Input() {
             </div>
           </div>
 
-           <div className="rounded-full hover:bg-neutral-700  relative sm:w-14 h-12 flex justify-center items-center duration-300 ease-in-out group ml-[80%] sm:ml-[85%]">
+           <div className="rounded-full hover:bg-neutral-700  relative sm:w-14 h-12 flex justify-center items-center duration-300 ease-in-out group ml-[75%] sm:ml-[85%]">
             
              <button onClick={()=>{Navigate('/videoLect')}}><SendIcon/></button>
 
